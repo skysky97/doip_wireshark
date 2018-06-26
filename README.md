@@ -1,5 +1,8 @@
-# doip_plugin
+# doip_wireshark
 DoIP Protocol (ISO 13400) dissector plugin for wireshark.  
+
+# Feature
+- Payload type analyze.
 
 # Install
 Make sure your wireshark is compiled with **Lua**.  A 'about' may like this: 
