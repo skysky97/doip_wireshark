@@ -16,8 +16,8 @@ fields.type = ProtoField.uint8(NAME .. ".type", "Payload Type")
 
 function str_payload_type(payload_type)
 	if (payload_type == 0x0000)
-		then
-			return "Generic nack"
+	then
+		return "Generic nack"
 	elseif (payload_type == 0x0001)
 	then
 		return "Vehicle identification request"
@@ -68,7 +68,7 @@ function doip.dissector(tvb, pinfo, tree)
 	
 	local payload_type = tvb(offset, 2)
 	subtree:add(fields.type, payload_type)
-    subtree:append_text(", payload type: " .. str_payload_type(payload_type:uint()))
+	subtree:append_text(", payload type: " .. str_payload_type(payload_type:uint()))
 	pinfo.cols.info:set(str_payload_type(payload_type:uint()))
 	offset = offset + 2
 end
