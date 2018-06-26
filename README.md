@@ -1,5 +1,5 @@
 # doip_plugin
-A wireshark dessector plugin for DoIP protocol.  
+A wireshark dessector plugin of DoIP protocol(ISO 13400).  
 
 # Install
 Make sure your wireshark is compiled with **Lua**.  A 'about' may like this: 
