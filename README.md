@@ -1,6 +1,8 @@
 # doip_wireshark
 DoIP Protocol (ISO 13400) dissector plugin for wireshark.  
 
+**Note**: DoIP is now supported in wireshark of version 3.2 and later.
+
 # Feature
 - Payload type analyze.
 
